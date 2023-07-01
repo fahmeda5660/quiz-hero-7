@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions Answers</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-4">
+  <header class="h-16 flex items-center shadow-sm">
+    <nav class="flex justify-between items-center w-9/12 mx-auto">
+      <div class="text-zinc-800 font-bold uppercase">
+        <h1 class="text-3xl">Quiz <span class="text-green-700">HERO</span></h1>
+        <p class="text-[20px] font-normal capitalize -mt-1">
+          Get ready to Quiz and be amazed!
+        </p>
+      </div>
+      <button id="blog-btn-1" class="bg-green-600 font-light text-2xl px-5 py-1 rounded text-white">
+        Blog
+      </button>
+    </nav>
+  </header>
+  <div class="w-9/12 mx-auto mt-8 mb-16">
+    <h2 class="text-5xl text-violet-700 text-center mb-8">Questions & Answers</h2>
+    <div>
+      <p class="text-2xl my-2 text-red-600">1. Difference between Map & ForEach, Find & Filter?</p>
+      <p class="text-xl"><span class="text-green-500">Answer:</span>
+      <ul>
+        <li>map() returns newArray, whereas forEach method returns undefined, map method is chainable and forAeach
+          method is unchainable. </li><br>
+        <li>The filter() method returns the matched values in an array from the collection and where find returns the
+          first matched values in an array. filter() – search through all the elements. find() – search through all the
+          child elements only.</li>
+
+      </ul>
+      </p>
+    </div>
+    <div>
+      <p class="text-2xl my-2 text-red-600">2. Difference between LocalStorage, Session Storage and Cookies?</p>
+      <p class="text-xl"><span class="text-green-500">Answer:</span>
+      <ul>
+        <li>Local Storage stores data in browser without any expiration date, if the browser is closed than also data is
+          not deleted, data can be used in future sessions. It's storage location: Browser only. Browers available in
+          HTML5. Capacity: 10mb</li><br>
+        <li>Session Storage stores data in browser for a session (when tab is closed), where browser is closed, data is
+          deleted, only available for one session. It's storage location: Browser only. Browers available in HTML5.
+          Capacity: 5mb</li><br>
+        <li>Cookies expire date can set manually. It's storage location: Browser and server. Browers available in HTML4
+          and HTML5. Capacity: 4kb</li><br>
+      </ul>
+      </p>
+    </div>
+    <div>
+      <p class="text-2xl my-2 text-red-600">3. How does work Event Loop?</p>
+      <p class="text-xl"><span class="text-green-500">Answer:</span>
+      <ul>
+        <li>
+          Event Loops work is to monitor the Call Stack and the Callback Queue. It is something that pulls stuff out of
+          the queue and places it onto the function execution stack whenever the function stack becomes empty. It is
+          responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+        </li>
+      </ul>
+      </p>
+    </div>
+    <div>
+      <p class="text-2xl my-2 text-red-600">4. Explain quizTimer()?</p>
+      <p class="text-xl"><span class="text-green-500">Answer:</span>
+      <ul>
+        <li>
+          quizTimer(): This function handling the timer to show how many time consumed. In setInterval function, using
+          querySelector, it acessing count filed and update the inner HTML of an element every second. The timer starts
+          at zero and counts up, showing the passing minutes and seconds. setInterval is a method that calls a function
+          or evaluates an expression at specific time interval. Using toString() method, it converting object data to
+          string.
+        </li>
+      </ul>
+      </p>
+    </div>
+    <div>
+      <p class="text-2xl my-2 text-red-600">5. Explain chooseQuiz()?</p>
+      <p class="text-xl"><span class="text-green-500">Answer:</span>
+        <ul>
+          <li>
+            The user's responses to a specific quiz question are recorded using this function. The parameters "index" and "givenAns" are required by the function. The "givenAns" parameter denotes the user-selected response, whereas the "index" parameter denotes the index of the quiz question that has been answered.
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <script src="blog.js"></script>
+  <script src="index-blog.js"></script>
+</body>
+
+</html>
